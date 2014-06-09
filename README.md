@@ -1,6 +1,6 @@
 # EbayRuby
 
-TODO: Write a gem description
+Ebay access finding API with getting all items.
 
 ## Installation
 
@@ -18,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Find your App Id on ebay Account
+
+    $ require 'ebay_ruby'
+    $ c=EbayConnect.new("YOURAPPID")
+
+Send two arguments keyword, number of entry per page
+
+    $ items = c.find_items_by_keywords("Harry Potter", 3)
+    $ items = c.find_items_by_category("CATEGORY_ID", 3)
+    $ item  = c.find_items_by_product("ISBN/UPC/EAN", 3)
+
+    $ items.first.title
+    $ items.first.galleyImage
+    ...
+   So on
+
+
 
 ## Contributing
 

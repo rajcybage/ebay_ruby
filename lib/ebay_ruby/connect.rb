@@ -34,6 +34,7 @@ class EbayConnect
     ebay_items = EbayFindItem.new(get_connect(build_uri(operation_name, search_param, per_page)))
     ebay_items.all_items
   end
+ 
 
   private
   def build_uri(operation_name, search_keyword, per_page)
