@@ -2,6 +2,7 @@
 
 Ebay access finding API with getting all items.
 
+<img src="https://badge.fury.io/rb/ebay_ruby.svg" alt="Gem Version" />
 ## Installation
 
 Add this line to your application's Gemfile:
