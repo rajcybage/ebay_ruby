@@ -6,6 +6,7 @@ require 'ebay_ruby/version'
 Gem::Specification.new do |spec|
   spec.name          = "ebay_ruby"
   spec.version       = EbayRuby::VERSION
+  spec.date          = '2014-06-10'
   spec.authors       = ["Rajarshi Das"]
   spec.email         = ["rdasrubyonrails@gmail.com"]
   spec.summary       = %q{Get access to all ebay api fundamentals}

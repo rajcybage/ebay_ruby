@@ -15,12 +15,16 @@ class EbayFindItem
 
   def all_items
     total_items = []
-    parse.first["searchResult"].first["item"].each do |item|
-      ebay_item = EbayItem.new(item)
-      ebay_item.build_items_data
-      total_items << ebay_item
+    begin
+      parse.first["searchResult"].first["item"].each do |item|
+        ebay_item = EbayItem.new(item)
+        ebay_item.build_items_data
+        total_items << ebay_item
+      end
+    rescue
+      total_items = []
     end
-    return total_items.flatten
+    total_items.flatten
   end
 
 end
