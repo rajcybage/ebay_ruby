@@ -33,7 +33,6 @@ Send two arguments keyword, number of entry per page
     $ items  = c.find_items_by_product("ISBN/UPC/EAN", 3)
     $ item = items.first
     $ item.title
-    $ item.galleyImage
     $ item.globalId
     $ item.primaryCategory #to get categoryid and name [{"categoryId"=>["2444"], "categoryName"=>["Vintage"]}]
     $ item.galleryURL # to get gallery url
